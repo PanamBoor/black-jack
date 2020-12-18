@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.itstep.ui.controller.BlackjackController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#12725b" height="600.0" stroke="BLACK" strokeType="INSIDE" width="579.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="251.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="lblBlackJack" layoutX="145.0" layoutY="265.0" text="Black Jack" textFill="WHITE" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="265.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDealer" layoutX="249.0" layoutY="14.0" text="Dealer: 0" textFill="WHITE" AnchorPane.leftAnchor="249.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" layoutX="579.0" stroke="BLACK" strokeType="INSIDE" width="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="579.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="lblPlayer" layoutX="256.0" layoutY="552.0" text="Player: 0" textFill="WHITE" AnchorPane.bottomAnchor="21.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPlay" layoutX="617.0" layoutY="539.0" mnemonicParsing="false" onAction="#onPlay" prefHeight="40.0" prefWidth="190.0" text="PLAY" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="23.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnStand" layoutX="616.0" layoutY="245.0" mnemonicParsing="false" onAction="#onStand" prefHeight="40.0" prefWidth="190.0" text="STAND" textAlignment="CENTER" AnchorPane.rightAnchor="24.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHit" layoutX="616.0" layoutY="170.0" mnemonicParsing="false" onAction="#onHit" prefHeight="40.0" prefWidth="190.0" text="HIT" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="695.0" layoutY="324.0" text="BET" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCash" layoutX="666.0" layoutY="14.0" text="Cash: 1000" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfBet" alignment="CENTER" layoutX="617.0" layoutY="367.0" prefHeight="40.0" prefWidth="190.0" promptText="Your bet">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <HBox fx:id="hbPlayerCards" alignment="CENTER_LEFT" layoutX="35.0" layoutY="347.0" prefHeight="223.0" prefWidth="499.0" />
+      <HBox fx:id="hbDealerCards" alignment="CENTER_LEFT" layoutX="35.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="223.0" prefWidth="499.0">
+         <opaqueInsets>
+            <Insets right="5.0" />
+         </opaqueInsets></HBox>
+   </children>
+</AnchorPane>
